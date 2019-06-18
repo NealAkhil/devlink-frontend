@@ -1,0 +1,41 @@
+.Login-comp{
+    margin-top: 80px;
+    color: rgb(68, 68, 68);
+    font-family: Helvetica;
+    font-weight: 300;
+    padding: 2% 35% 4% 35%;
+}
+
+.login-btn{
+    width: 100%;
+    border-radius: 3px;
+}
+.Login-container{
+    text-align: left;
+    font-size: 85%;
+    font-weight: 600;
+    padding: 10% 8% 10% 8%;
+    border: 0.5px solid rgba(68, 68, 68, 0.233);
+    border-radius: 4px; 
+}
+.not-user{
+    padding: 5% 8% 5% 8%;
+}
+.Login-field-text{
+    text-align: left;
+    margin-left: 0%;
+}
+input.form-control.login-form{
+    background-color: white;
+    margin-bottom: 20px;
+}
+
+a.forgot-password{
+    text-decoration: none;
+    color: rgb(55,64,255);
+    font-weight: 800;
+}
+a.forgot-password:hover{
+    border: none;
+    color: rgb(55,64,255);    
+}
