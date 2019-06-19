@@ -2,25 +2,27 @@
     z-index: -9999;
     margin-top: 62px;
     height: 90vh;
-    padding-top:12%;
+    padding-top:20%;
     padding-bottom: 15%;
     background-color: rgb(221, 221, 221);
-    background-image: url('../img/bg1.jpg');
+    background-image: url('../img/bg7.jpg');
     background-attachment: fixed;
     background-size: cover;
     background-repeat: no-repeat;
 }
 .heading-text{
     color: rgba(48, 45, 45, 0.822);
+    /* color: rgb(55,64,255); */
+    /* text-decoration: underline; */
 }
 .btn{
     margin-top: 5%;
-    padding: 3%;
-    font-weight: 500;
-    font-size: 80%;
-    color: white;
+    padding: 3% 5% 3% 5%;
     text-transform: uppercase;
     background-color: rgb(55,64,255);
+    font-weight: 500;
+    color: white;
+    font-size:100%;
 }
 .left-div{
     text-align: left;
