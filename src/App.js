@@ -7,16 +7,17 @@ import Register from './components/auth/Register';
 import Navbar from './components/layout/Navbar';
 import Landing from './components/layout/Landing';
 import Test from './components/layout/Test';
-import reducer from './reducers/index'
 
-// importing redux create store 
-import {createStore} from 'redux'
-const initialState={
-  i_am:"",
-  i_like:""
-}
+//load helloworld
+import HelloWorld from './components/layout/HelloWord'
 
-const store= createStore(reducer, initialState);
+// load explre
+import Explore from './components/layout/Explore'
+
+//importing store
+import {store} from './store/index'
+// import Explore from './components/layout/Explore';
+
 class App extends React.Component{
   state=store.getState();
   render() {
@@ -31,10 +32,12 @@ class App extends React.Component{
                 render={(props)=><Test {...props} i_am={this.state.i_am} i_like={this.state.i_like}/>}
               />
             <Route path="/register" component={Register}/>
+            <Route path="/explore"
+              render={(props)=><Explore {...props} key={2} technologies={["react", "elm", "react-redux"]}/>}
+            />
             <Route exact path="/" component={Landing}/>
             </Switch>
-           
-            
+            <HelloWorld key={1} tech={store.getState().tech}/>
           </div>
       </Router>
     );
